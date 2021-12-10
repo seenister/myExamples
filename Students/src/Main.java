@@ -18,13 +18,13 @@ public class Main {
 
         ShowFilteredStudents sh = new ShowFilteredStudents();
         sh.showFilteredStudentsAction(someStudents, new FilterOnAge());
-        /*sh.showFilteredStudentsAction(someStudents, new FilterStudents() {
+        sh.showFilteredStudentsAction(someStudents, new FilterStudents() {
             @Override
             public boolean check(Student st) {
                 return st.grade>9;
             }
         });
-        sh.showFilteredStudentsAction(someStudents,(Student st) -> st.grade>9 ); */
+        sh.showFilteredStudentsAction(someStudents,(Student st) -> st.grade>9 ); 
     }
 
 
